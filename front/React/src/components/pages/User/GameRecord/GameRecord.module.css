@@ -1,0 +1,11 @@
+.container {
+  margin-top: 5em;
+}
+
+.title {
+  border-bottom: #50a3a2 solid 2px;
+  padding-bottom: 0.2em;
+  width: 30%;
+  text-align: left;
+  font-size: 18px;
+}

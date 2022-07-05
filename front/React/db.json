@@ -1,0 +1,283 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "user_name": "Terrelien",
+      "joined_date": "Mon Jun 10 2022 17:00 GMT",
+      "token": "sidfopihaeorkgoiueriuhdfmiovuj"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "user_name": "西",
+      "joined_date": "Mon Ari 10 2022 16:00 GMT",
+      "token": "dfopihoiueriuhdfmvuj"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "user_name": "Kobakichi",
+      "joined_date": "Mon Feb 10 2022 20:00 GMT",
+      "token": "sidfopihaeorkgjawpsdfiovuj"
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "user_name": "dai",
+      "joined_date": "Mon Mar 14 2022 19:00 GMT",
+      "token": "oiueriuhdfmhaeorkgjawpsdfiovuj"
+    },
+    {
+      "id": 5,
+      "user_id": 5,
+      "user_name": "haru",
+      "joined_date": "Mon May 20 2022 15:00 GMT",
+      "token": "poiuddfopihaeorkgjawpsdfiovuj"
+    },
+    {
+      "id": 6,
+      "user_id": 6,
+      "user_name": "りな",
+      "joined_date": "Mon Jun 10 2022 17:00 GMT",
+      "token": "isfdfoiueriuhdfmrkgjawpsdfiovuj"
+    },
+    {
+      "user_name": "hack",
+      "joined_date": "2022-06-17T16:24:18.179Z",
+      "password": "kazu",
+      "id": 7
+    },
+    {
+      "user_name": "hack",
+      "password": "kazu",
+      "joined_date": "2022-06-17T16:24:18.229Z",
+      "token": "aaaaaaaa",
+      "id": 8
+    },
+    {
+      "user_name": "gaku",
+      "joined_date": "2022-06-17T22:14:41.612Z",
+      "password": "11",
+      "id": 9
+    },
+    {
+      "user_name": "gaku",
+      "password": "11",
+      "joined_date": "2022-06-17T22:14:41.657Z",
+      "token": "aaaaaaaa",
+      "id": 10
+    }
+  ],
+  "terminologie": [
+    {
+      "terminologie_id": 1,
+      "genre_id": "web",
+      "theme_id": 1,
+      "description_ja": "これはモックサーバーからのダミーデータです。",
+      "description_ro": "korehamokkusa-ba-karanodami-de-tadesu."
+    }
+  ],
+  "result": [],
+  "result1": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "user_name": "Terrelien",
+      "played_at": "Mon Jun 10 2022 17:00 GMT",
+      "accuracy": 94,
+      "wpm": 133
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "user_name": "西",
+      "played_at": "Mon Ari 10 2022 16:00 GMT",
+      "accuracy": 93,
+      "wpm": 133
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "user_name": "Kobakichi",
+      "played_at": "Mon Feb 10 2022 20:00 GMT",
+      "accuracy": 89,
+      "wpm": 133
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "user_name": "dai",
+      "played_at": "Mon Mar 14 2022 19:00 GMT",
+      "accuracy": 86,
+      "wpm": 133
+    },
+    {
+      "id": 5,
+      "user_id": 5,
+      "user_name": "haru",
+      "played_at": "Mon May 20 2022 15:00 GMT",
+      "accuracy": 85,
+      "wpm": 133
+    },
+    {
+      "id": 6,
+      "user_id": 6,
+      "user_name": "りな",
+      "played_at": "Mon Jun 10 2022 17:00 GMT",
+      "accuracy": 84,
+      "wpm": 133
+    },
+    {
+      "id": 7,
+      "user_id": 7,
+      "user_name": "西",
+      "played_at": "Mon Ari 10 2022 16:00 GMT",
+      "accuracy": 83,
+      "wpm": 133
+    },
+    {
+      "id": 8,
+      "user_id": 8,
+      "user_name": "Kobakichi",
+      "played_at": "Mon Feb 10 2022 20:00 GMT",
+      "accuracy": 82,
+      "wpm": 133
+    },
+    {
+      "id": 9,
+      "user_id": 9,
+      "user_name": "dai",
+      "played_at": "Mon Mar 14 2022 19:00 GMT",
+      "accuracy": 81,
+      "wpm": 133
+    },
+    {
+      "id": 10,
+      "user_id": 10,
+      "user_name": "haru",
+      "played_at": "Mon May 20 2022 15:00 GMT",
+      "accuracy": 80,
+      "wpm": 133
+    }
+  ],
+  "result2": [
+    {
+      "id": 11,
+      "user_id": 1,
+      "user_name": "Terrelien",
+      "played_at": "Mon Jun 10 2022 17:00 GMT",
+      "accuracy": 79,
+      "wpm": 153
+    },
+    {
+      "id": 12,
+      "user_id": 2,
+      "user_name": "西",
+      "played_at": "Mon Ari 10 2022 16:00 GMT",
+      "accuracy": 76,
+      "wpm": 133
+    },
+    {
+      "id": 13,
+      "user_id": 3,
+      "user_name": "Kobakichi",
+      "played_at": "Mon Feb 10 2022 20:00 GMT",
+      "accuracy": 75,
+      "wpm": 109
+    },
+    {
+      "id": 14,
+      "user_id": 4,
+      "user_name": "dai",
+      "played_at": "Mon Mar 14 2022 19:00 GMT",
+      "accuracy": 74,
+      "wpm": 133
+    },
+    {
+      "id": 15,
+      "user_id": 5,
+      "user_name": "haru",
+      "played_at": "Mon May 20 2022 15:00 GMT",
+      "accuracy": 73,
+      "wpm": 121
+    },
+    {
+      "id": 16,
+      "user_id": 6,
+      "user_name": "りな",
+      "played_at": "Mon Jun 10 2022 17:00 GMT",
+      "accuracy": 71,
+      "wpm": 111
+    },
+    {
+      "id": 17,
+      "user_id": 7,
+      "user_name": "西",
+      "played_at": "Mon Ari 10 2022 16:00 GMT",
+      "accuracy": 69,
+      "wpm": 135
+    },
+    {
+      "id": 18,
+      "user_id": 8,
+      "user_name": "Kobakichi",
+      "played_at": "Mon Feb 10 2022 20:00 GMT",
+      "accuracy": 66,
+      "wpm": 142
+    },
+    {
+      "id": 19,
+      "user_id": 9,
+      "user_name": "dai",
+      "played_at": "Mon Mar 14 2022 19:00 GMT",
+      "accuracy": 64,
+      "wpm": 121
+    },
+    {
+      "id": 20,
+      "user_id": 10,
+      "user_name": "haru",
+      "played_at": "Mon May 20 2022 15:00 GMT",
+      "accuracy": 60,
+      "wpm": 109
+    }
+  ],
+  "record": [
+    {
+      "id": 1,
+      "user_name": "hogefuga",
+      "played_at": "Mon Jun 10 2022 17:00 GMT",
+      "accuracy": 94,
+      "wpm": 133
+    },
+    {
+      "id": 2,
+      "user_name": "hogefuga",
+      "played_at": "Mon Ari 10 2022 16:00 GMT",
+      "accuracy": 93,
+      "wpm": 124
+    },
+    {
+      "id": 3,
+      "user_name": "hogefuga",
+      "played_at": "Mon Feb 10 2022 20:00 GMT",
+      "accuracy": 89,
+      "wpm": 103
+    },
+    {
+      "id": 4,
+      "user_name": "hogefuga",
+      "played_at": "Mon Mar 14 2022 19:00 GMT",
+      "accuracy": 86,
+      "wpm": 163
+    },
+    {
+      "id": 5,
+      "user_name": "hogefuga",
+      "played_at": "Mon May 20 2022 15:00 GMT",
+      "accuracy": 85,
+      "wpm": 93
+    }
+  ]
+}

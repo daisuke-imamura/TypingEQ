@@ -1,0 +1,85 @@
+# docker composerのバージョンの指定
+version: "3.9"
+
+services:
+  flask:
+    container_name: flask
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: ./backend/flask_app/Dockerfile
+    ports:
+      - "5000:5000"
+    expose:
+      - "5000"
+    volumes:
+      - ./backend/flask_app/scripts:/var/www/scripts:cached
+      - ./backend/flask_app/app:/var/www
+      - ./gunicorn_socket:/tmp/gunicorn_socket/gunicorn_flask.sock
+    working_dir: /var/www/scripts
+    command: bash -c "./run.sh"
+    networks:
+      - my_network
+    environment:
+      TZ: "Asia/Tokyo"
+    env_file:
+      - .env.dev
+      
+  db:
+    container_name: mysql_db
+    build:
+      context: .
+      dockerfile: ./backend/DB/Dockerfile
+    restart: always
+    tty: true
+    expose:
+      - "3306"
+    volumes:
+      - ./backend/DB/docker-entrypoint:/docker-entrypoint-initdb.d
+      - ./log/db:/var/log/mysql:cached
+    networks:
+      - my_network
+    environment:
+      TZ: "Asia/Tokyo"
+    env_file:
+      - .env.dev
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    env_file:
+      - .env.dev
+    links:
+      - db
+    ports:
+      - "4000:80"
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
+    networks:
+      - my_network
+    
+  web:
+    container_name: NginX
+    image: nginx:latest
+    command: nginx -g "daemon off;"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./front/React/build:/usr/share/nginx/html
+      - ./web/conf:/etc/nginx/conf.d
+      - ../ssl/certs/:/etc/pki/tls/certs/
+      - ../ssl/private/:/etc/pki/tls/private/
+      - ./gunicorn_socket:/tmp/gunicorn_socket/gunicorn_flask.sock
+    links:
+      - flask
+    restart: always
+    networks:
+      - my_network
+    
+volumes:
+  socket:
+
+networks:
+  my_network:
+    driver: bridge

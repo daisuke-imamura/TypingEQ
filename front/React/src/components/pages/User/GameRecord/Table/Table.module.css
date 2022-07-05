@@ -1,0 +1,12 @@
+.tableContainer {
+  width: 90%;
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 90%;
+}

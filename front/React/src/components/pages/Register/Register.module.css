@@ -1,0 +1,30 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(80, 163, 162, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.signupbutton {
+  width: 100%;
+}
+
+.errorMessage {
+  color: whitesmoke;
+  margin: 2%;
+  font-weight: bold;
+  font-size: large;
+}

@@ -1,0 +1,28 @@
+.screenArea {
+  height: 70%;
+  width: 100%;
+  border: solid 2px lightgrey;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 2em;
+}
+
+.border {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.typeTitle {
+  text-align: left;
+  font-size: 18px;
+}
+
+.typeTitle span {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+}

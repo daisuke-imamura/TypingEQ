@@ -1,0 +1,27 @@
+/* ============= additional ================ */
+
+.memuTitle {
+  color: black;
+  font-size: 40px;
+  margin: 10px 0 50px 0;
+  text-align: center;
+  border-bottom: 3px solid #808080;
+  /* text-decoration: underline;
+  text-underline-offset: 0.5em; */
+}
+
+.logout {
+  margin-top: auto;
+  border-top: 3px solid #808080;
+  padding-top: 15px;
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 30px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+  background-color: #fff;
+  border: none;
+}

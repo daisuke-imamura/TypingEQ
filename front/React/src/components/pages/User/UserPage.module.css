@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #fff;
+}

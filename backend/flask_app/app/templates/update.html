@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}用語編集ページ{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>用語編集</h1>
+    <form method="POST">
+        <label for="genre_id">ジャンル</label>
+        <input type="text" class="form-control" name="genre_id" value="{{ term.genre_id }}">
+        <label for="theme_jp">テーマ(日本語)</label>
+        <input type="text" class="form-control" name="theme_jp" value="{{ term.theme_jp }}">
+        <label for="theme_ro">テーマ（ローマ字）</label>
+        <input type="text" class="form-control" name="theme_ro" value="{{ term.theme_ro }}">
+        <label for="body">内容(日本語）</label>
+        <textarea type="text" class="form-control" name="description_ja">{{ term.description_ja }}</textarea>
+        <label for="body">内容(ローマ字）</label>
+        <textarea type="text" class="form-control" name="description_ro">{{ term.description_ro }}</textarea>
+        <input type="submit" value="用語編集">
+    </form>
+</div>
+{% endblock %}

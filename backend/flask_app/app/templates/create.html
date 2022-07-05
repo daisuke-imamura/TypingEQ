@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}用語新規登録ページ{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>用語新規登録</h1>
+        <form method="POST">
+            <p>
+                <label for="genre">ジャンル</label>
+                <input type="text" class="form-control" name="genre_id"> 
+            </p>
+            <p>
+                <label for="theme">テーマ（日本語）</label>
+                <input type="text" class="form-control" name="theme_jp">
+            </p>
+            <p>
+                <label for="title">テーマ（ローマ字）</label>
+                <input type="text" class="form-control" name="theme_ro">
+            </p>
+            <p>
+                <label for="body">内容（日本語）</label>
+                <textarea type="text" class="form-control" name="description_ja"></textarea>
+            </p>
+            <p>
+                <label for="body">内容（ローマ字）</label>
+                <textarea type="text" class="form-control" name="description_ro"></textarea>
+            </p>
+            <input type="submit" class="btn btn-primary" value="新規登録">
+        </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+.recordItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.recordItem > p {
+  text-align: left;
+}
+
+.recordItem > h1 {
+  font-size: 40px;
+}
+
+.recordItem > h1 > span {
+  font-size: 18px;
+}

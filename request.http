@@ -1,0 +1,117 @@
+POST http://localhost:5000/result HTTP/1.1
+content-type: application/json
+
+{ 
+    "user_id" : 1,
+    "accuracy_value" : 98.2,
+    "wpm" : 100.9,
+    "played_at_date" :"2022-6-10"
+}
+###
+POST http://localhost:5000/result HTTP/1.1
+content-type: application/json
+
+{ 
+    "user_id" : 2,
+    "accuracy_value" : 97.4,
+    "wpm" : 117.2,
+    "played_at_date" :"2022-6-11"
+}
+###
+POST http://localhost:5000/result HTTP/1.1
+content-type: application/json
+
+{ 
+    "user_id" : 3,
+    "accuracy_value" : 96.3,
+    "wpm" : 105.3,
+    "played_at_date" : "2022-6-12-12-34-56-1230"
+}
+###
+POST http://localhost:5000/result HTTP/1.1
+content-type: application/json
+
+{ 
+    "user_id" : 4,
+    "accuracy_value" : 94.3,
+    "wpm" : 100.3,
+    "played_at_date" : "2022-6-13-12-34-56-1230"
+}
+
+###
+
+GET http://localhost:5000/result HTTP/1.1
+###
+GET http://localhost:5000/result/user HTTP/1.1
+
+###
+GET http://localhost:5000/result/1 HTTP/1.1
+###
+GET http://localhost:5000/result/2 HTTP/1.1
+
+
+
+###
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "user_name": "にし",
+    "password": "1"
+}
+###
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "user_name" : "山田長政",
+    "password" : "test1"
+}
+###
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "user_name" : "浅井長政",
+    "password" : "test2"
+}
+###
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "user_name" : "滝廉太郎",
+    "password" : "test3"
+}
+
+###
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "user_name" : "今村 優月",
+    "password" : "test4"
+}
+###
+POST http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "user_name" : "今村 ゆうと",
+    "password" : "test5"
+}
+
+
+
+
+###
+GET http://localhost:5000/user HTTP/1.1
+
+###
+POST http://localhost:5000/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "user_name": "今村 優月",
+    "password": "test4"
+}

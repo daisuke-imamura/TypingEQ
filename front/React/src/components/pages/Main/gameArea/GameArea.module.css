@@ -1,0 +1,9 @@
+.gameArea {
+  width: 80%;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 3em 0 0;
+}

@@ -1,0 +1,12 @@
+.register {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 12px;
+  padding-top: 20px;
+  color: white;
+}
+
+.register p {
+  margin-right: 20px;
+}

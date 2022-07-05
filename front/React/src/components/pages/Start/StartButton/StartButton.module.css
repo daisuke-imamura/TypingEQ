@@ -1,0 +1,15 @@
+.button {
+  /* padding: 3em; */
+  border: none;
+  background-color: #50a3a2;
+  color: #fff;
+  margin: 1em;
+  width: 490px;
+  height: 150px;
+  font-size: 70px;
+  font-family: "Denk One", sans-serif;
+}
+
+.text {
+  font-size: 18px;
+}

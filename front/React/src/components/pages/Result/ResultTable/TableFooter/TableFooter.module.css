@@ -1,0 +1,12 @@
+.pagenationBtn:hover {
+  background-color: #50a3a2 !important;
+  color: #fff !important;
+}
+
+.pagenation {
+  cursor: default !important;
+}
+
+.pagenation:hover {
+  background-color: #fff !important;
+}

@@ -1,0 +1,38 @@
+# docker composerのバージョンの指定
+version: "3.9"
+
+services:
+  node:
+    # buildするdockerfileの位置
+    build: ./front
+    # 作成するdockerコンテナの名前
+    container_name: node
+    # コンテナにバインドするポートの指定（左:自分のPCポート、右:dookerコンテナのポート）
+    working_dir: /front    
+    volumes:
+      - ./front/React:/front    
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    # コンテナが勝手に終了しないための設定
+    tty: true
+    # 標準入出力とエラー出力をコンテナに結びつける設定
+    stdin_open: true
+    # ホットリロードを行う設定
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      my_network:
+        ipv4_address: 192.168.0.101
+
+volumes:
+  socket:
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+     driver: default
+     config:
+       - subnet: 192.168.0.0/24
